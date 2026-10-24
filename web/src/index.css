@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --color-ink: #14201f;
+  --color-moss: #0f3d3e;
+  --color-sea: #1f6f6a;
+  --color-foam: #e8f2ef;
+  --color-sand: #f2e8d5;
+  --color-ember: #e07a3d;
+  --color-line: #c5d5d0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(31, 111, 106, 0.18), transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, rgba(224, 122, 61, 0.12), transparent 50%),
+    linear-gradient(180deg, #f7f4ec 0%, #eef5f2 45%, #e7efeb 100%);
+  background-attachment: fixed;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.35);
+    opacity: 0.55;
+  }
+}
+
+@keyframes stream-in {
+  from {
+    opacity: 0;
+    transform: translateX(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.rise {
+  animation: rise 0.55s ease-out both;
+}
+
+.stream-in {
+  animation: stream-in 0.28s ease-out both;
+}
+
+.pulse-dot {
+  animation: pulse-dot 1.2s ease-in-out infinite;
+}

@@ -1,0 +1,42 @@
+GEMMA-4 LIVE BENCH — REAL MEASURED NUMBERS (not simulated)
+Model: gemma-4-26b-a4b-it
+Completed stress runs: plain=37 harness=37 (of 45 planned each)
+Prompt ids covered: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+Everyday runs completed: 0/30
+
+=== STRESS: SILENT FAILURES ===
+Plain loop:   5/37  (13.5%)
+Harness:      1/37  (2.7%)
+% reduction:  80.0%
+
+=== STRESS: UNSUCCESSFUL (silent OR crash OR wrong/empty) ===
+Plain loop:   14/37  (37.8%)
+Harness:      2/37  (5.4%)
+% reduction:  85.7%
+
+=== AVG LATENCY ===
+Plain:   10.50s
+Harness: 3.17s
+
+=== FAILURE TYPE COUNTS (stress) ===
+type                        plain  harness
+silent_failure                  5        1
+crash                           9        0
+empty_answer                    2        0
+wrong_answer                    3        1
+timeout                         4        3
+429                             0        1
+malformed/phantom              11       12
+
+=== HARNESS RECOVERY COUNTS ===
+  DEDUPED                      27
+  PHANTOM_TOOL_LINTED          9
+  ARGS_COERCED                 4
+  BACKOFF_429                  4
+  TOOL_ERROR                   4
+  STEP_CAP                     3
+  TOOL_TIMEOUT                 3
+  ARGS_MISSING                 1
+
+Raw CSV: results.csv
+NOTE: Full 45+45+30 plan was cut short for pitch deadline; numbers above are live API runs only.

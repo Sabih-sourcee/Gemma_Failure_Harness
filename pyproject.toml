@@ -1,0 +1,11 @@
+[project]
+name = "gemma-harness"
+version = "0.1.0"
+description = "Safety net for Gemma 4 tool agents"
+requires-python = ">=3.10"
+dependencies = [
+  "google-genai==2.33.0",
+  "fastapi>=0.115",
+  "uvicorn[standard]>=0.32",
+  "pydantic>=2.0",
+]
