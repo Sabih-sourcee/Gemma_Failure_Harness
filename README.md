@@ -9,9 +9,9 @@
 
 ## Teammate
 
-- For Teammate sabih rehman : Branch = sabih
-- For Teammate abdullah bin nasir : Branch = abdullah
-- For Teammate ayaan lakahni : Branch = ayaan
+- For Teammate sabih rehman : Branch = sabih (frontend + merging of that backend by abdullah)
+- For Teammate abdullah bin nasir : Branch = abdullah (backend)
+- For Teammate ayaan lakahni : He made the presentation
 
 ## What problem does this solve?
 
