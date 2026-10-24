@@ -7,6 +7,12 @@
 
 ---
 
+## Teammate
+
+- For Teammate sabih rehman : Branch = sabih
+- For Teammate abdullah bin nasir : Branch = abdullah
+- For Teammate ayaan lakahni : Branch = ayaan
+
 ## What problem does this solve?
 
 An "agent" is an AI that can use **tools**, which are small functions like "get the weather" or "add two numbers". The AI decides which tool to call and what to pass it.
